@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="29779edb-7192-4099-a35c-4a7fd5a900c5" name="Changes" comment="actually linking the database to the UI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/_components/topnav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/topnav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/uploadthing/core.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/uploadthing/core.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/db/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/rows.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,12 +61,25 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "pnpm",
+    "npm.t3-app-start.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "/Users/prajulsahu/Developer/t3app-gallery/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Users/prajulsahu/Developer/t3app-gallery/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="t3-app-start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -83,7 +99,7 @@
       <workItem from="1717627139425" duration="15226000" />
       <workItem from="1718310435841" duration="25341000" />
       <workItem from="1719699604323" duration="33000" />
-      <workItem from="1719699644930" duration="2647000" />
+      <workItem from="1719699644930" duration="9573000" />
     </task>
     <task id="LOCAL-00001" summary="Database setup">
       <option name="closed" value="true" />
