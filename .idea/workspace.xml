@@ -5,16 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29779edb-7192-4099-a35c-4a7fd5a900c5" name="Changes" comment="queries moved into separate files">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/@modal/(.)img/[id]/modal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/full-image-page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@modal/(.)img/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@modal/(.)img/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_components/topnav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/topnav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/img/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/img/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/utils/uploadthing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/uploadthing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/queries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/queries.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,11 +72,16 @@
     "nodejs_package_manager_path": "pnpm",
     "npm.t3-app-start.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "/Users/prajulsahu/Developer/t3app-gallery/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "com.codeium.AppSettingsConfigurable",
     "ts.external.directory.path": "/Users/prajulsahu/Developer/t3app-gallery/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="t3-app-start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -97,7 +113,8 @@
       <workItem from="1717627139425" duration="15226000" />
       <workItem from="1718310435841" duration="25341000" />
       <workItem from="1719699604323" duration="33000" />
-      <workItem from="1719699644930" duration="21591000" />
+      <workItem from="1719699644930" duration="23237000" />
+      <workItem from="1720557688379" duration="3304000" />
     </task>
     <task id="LOCAL-00001" summary="Database setup">
       <option name="closed" value="true" />

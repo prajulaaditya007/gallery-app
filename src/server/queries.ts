@@ -20,7 +20,7 @@ export async function getMyImages() {
  * @return {Promise<Image>} A promise that resolves to the retrieved image, or throws an error if the image is not found.
  */
 
-export async function getImage(id : number) {
+export async function getImage(id: number) {
   const user = auth();
   if (!user.userId) throw new Error("Unauthorized");
 
@@ -31,8 +31,6 @@ export async function getImage(id : number) {
   if (!image) throw new Error("Image not found");
 
   if (image.userId !== user.userId) throw new Error("Unauthorized");
-  
+
   return image;
 }
-
- 

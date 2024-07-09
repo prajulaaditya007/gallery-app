@@ -1,7 +1,7 @@
 "use client";
 
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
-import { UploadButton } from "~/app/utils/uploadthing";
+import { UploadButton } from "~/utils/uploadthing";
 import { useRouter } from "next/navigation";
 
 function TopNav() {

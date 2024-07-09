@@ -1,7 +1,24 @@
-export default async function PhotoModal({
+import { Modal } from "~/app/@modal/(.)img/[id]/modal";
+import FullPageImageView from "~/components/full-image-page";
+
+/**
+ * Asynchronously renders the photo modal based on the provided photo ID.
+ *
+ * @param {object} params - Object containing the photo ID.
+ * @param {string} params.id - The ID of the photo to be displayed.
+ * @return {JSX.Element} The rendered photo modal.
+ */
+export default function PhotoPage({
   params: { id: photoId },
 }: {
   params: { id: string };
 }) {
-  return <div>{photoId}</div>;
+  // Convert the photo ID to a number
+  const idIsNum = Number(photoId);
+
+  // Throw an error if the ID is not a number
+  if (Number.isNaN(idIsNum)) throw new Error("Invalid ID");
+
+  // Render the modal with the image
+  return <FullPageImageView id={idIsNum} />;
 }
