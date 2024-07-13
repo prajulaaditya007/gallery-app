@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29779edb-7192-4099-a35c-4a7fd5a900c5" name="Changes" comment="queries moved into separate files">
-      <change afterPath="$PROJECT_DIR$/src/app/@modal/(.)img/[id]/modal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/full-image-page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/@modal/(.)img/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@modal/(.)img/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/topnav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/topnav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/img/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/img/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/utils/uploadthing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/uploadthing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/queries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/queries.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@modal/(.)img/[id]/modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@modal/(.)img/[id]/modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/full-image-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/full-image-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,26 +51,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "javascript.nodejs.core.library.configured.version": "20.11.1",
-    "javascript.nodejs.core.library.typings.version": "20.11.30",
-    "last_opened_file_path": "/Users/prajulsahu/Developer/t3app-gallery",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "pnpm",
-    "npm.t3-app-start.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "/Users/prajulsahu/Developer/t3app-gallery/node_modules/prettier",
-    "settings.editor.selected.configurable": "com.codeium.AppSettingsConfigurable",
-    "ts.external.directory.path": "/Users/prajulsahu/Developer/t3app-gallery/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.11.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.11.30&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/prajulsahu/Developer/t3app-gallery&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;npm.t3-app-start.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/prajulsahu/Developer/t3app-gallery/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/prajulsahu/Developer/t3app-gallery/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/" />
@@ -114,7 +108,8 @@
       <workItem from="1718310435841" duration="25341000" />
       <workItem from="1719699604323" duration="33000" />
       <workItem from="1719699644930" duration="23237000" />
-      <workItem from="1720557688379" duration="3304000" />
+      <workItem from="1720557688379" duration="9975000" />
+      <workItem from="1720904490233" duration="1009000" />
     </task>
     <task id="LOCAL-00001" summary="Database setup">
       <option name="closed" value="true" />
