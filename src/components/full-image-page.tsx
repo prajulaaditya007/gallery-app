@@ -12,5 +12,9 @@ export default async function FullPageImageView(props: { id: number }) {
   const image = await getImage(props.id);
 
   // Render the modal with the image
-  return <img src={image.url} className="w-96" alt={image.name} />;
+  return (
+    <div className="flex w-full h-full bg-green-500">
+      <img src={image.url} className="w-96 object-contain" alt={image.name} />
+    </div>
+  );
 }
