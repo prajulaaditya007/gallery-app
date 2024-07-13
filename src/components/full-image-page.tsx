@@ -17,6 +17,7 @@ export default async function FullPageImageView(props: {
   return (
     <div className="flex h-full w-full min-w-0">
       <div className="flex flex-shrink items-center justify-center ">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={image.url}
           className="flex-shrink object-contain"
