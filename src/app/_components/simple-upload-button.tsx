@@ -75,10 +75,8 @@ export function SimpleUploadButton() {
       router.refresh();
     },
     onUploadError: (error) => {
-      toast.dismiss("uploading");
-      toast(
-        <span className="text-lg">{`Upload failed ❌: ${error.message}`}</span>,
-      );
+      posthog.capture("upload_error", { error: error.message });
+      toast.error("Upload failed");
     },
   });
 
