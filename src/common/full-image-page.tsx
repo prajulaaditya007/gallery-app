@@ -1,8 +1,6 @@
 import { deleteImage, getImage } from "~/server/queries";
 import { clerkClient } from "@clerk/nextjs/server";
-import { Button } from "../components/ui/button"
-import { toast } from "sonner";
-
+import { Button } from "~/components/ui/button";
 
 /**
  * Asynchronously renders the photo modal based on the provided photo ID.
@@ -49,11 +47,15 @@ export default async function FullPageImageView(props: {
               <span>{new Date(image.createdAt).toLocaleDateString()}</span>
             </div>
             <div className="mb-4 flex flex-row gap-2">
-              <form action={async () => {
-                "use server";
-                await deleteImage(idAsNumber);
-              }}>
-                <Button type="submit" variant={'destructive'}>Delete</Button>
+              <form
+                action={async () => {
+                  "use server";
+                  await deleteImage(idAsNumber);
+                }}
+              >
+                <Button type="submit" variant={"destructive"}>
+                  Delete
+                </Button>
               </form>
             </div>
           </div>

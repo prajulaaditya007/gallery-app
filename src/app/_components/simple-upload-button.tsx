@@ -2,10 +2,9 @@
 
 import { useUploadThing } from "~/utils/uploadthing";
 import { useRouter } from "next/navigation";
-import { toast } from "sonner"
-import { LoadingSpinnerSVG, UploadSpinnerSVG } from "~/assets/spinners";
+import { toast } from "sonner";
+import { UploadSpinnerSVG } from "~/assets/spinners";
 import { usePostHog } from "posthog-js/react";
-
 
 // inferred input off useUploadThing
 type Input = Parameters<typeof useUploadThing>;
@@ -52,8 +51,6 @@ function UploadSVG() {
   );
 }
 
-
-
 export function SimpleUploadButton() {
   const router = useRouter();
   const posthog = usePostHog();
@@ -61,26 +58,29 @@ export function SimpleUploadButton() {
   const { inputProps } = useUploadThingInputProps("imageUploader", {
     onUploadBegin: () => {
       posthog?.capture("uploading");
-      toast(<div className="flex gap-2 items-center">
-        <UploadSpinnerSVG />
-        <span className="text-lg">Uploading 📤</span>
-      </div>, {
-        duration: 100000,
-        id: "uploading",
-      });
+      toast(
+        <div className="flex items-center gap-2">
+          <UploadSpinnerSVG />
+          <span className="text-lg">Uploading 📤</span>
+        </div>,
+        {
+          duration: 100000,
+          id: "uploading",
+        },
+      );
     },
     onClientUploadComplete: () => {
       toast.dismiss("uploading");
-      toast( <span className="text-lg">Upload Complete ✅</span>)
+      toast(<span className="text-lg">Upload Complete ✅</span>);
       router.refresh();
     },
     onUploadError: (error) => {
       toast.dismiss("uploading");
-      toast(<span  className="text-lg">{`Upload failed: ${error.message} ❌`}</span>)
-    }
+      toast(
+        <span className="text-lg">{`Upload failed ❌: ${error.message}`}</span>,
+      );
+    },
   });
-
-  
 
   return (
     <div>
