@@ -3,6 +3,7 @@
 import { useUploadThing } from "~/utils/uploadthing";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner"
+import { LoadingSpinnerSVG, UploadSpinnerSVG } from "~/assets/spinners";
 
 
 // inferred input off useUploadThing
@@ -50,10 +51,15 @@ function UploadSVG() {
   );
 }
 
+
+
 export function SimpleUploadButton() {
   const { inputProps } = useUploadThingInputProps("imageUploader", {
     onUploadBegin: () => {
-      toast("Uploading...", {
+      toast(<div className="flex gap-2 items-center">
+        <UploadSpinnerSVG />
+        <span className="text-lg">Uploading...</span>
+      </div>, {
         icon: "📤",
         duration: 100000,
         id: "uploading",
@@ -66,6 +72,12 @@ export function SimpleUploadButton() {
       })
       router.refresh();
     },
+    onUploadError: (error) => {
+      toast.dismiss("uploading");
+      toast(`Upload failed: ${error.message}`, {
+        icon: "❌",
+      })
+    }
   });
   const router = useRouter();
 
@@ -80,6 +92,8 @@ export function SimpleUploadButton() {
         className={"sr-only"}
         {...inputProps}
       />
+      {/* <LoadingSpinnerSVG />
+      <UploadSpinnerSVG /> */}
     </div>
   );
 }
