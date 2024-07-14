@@ -67,16 +67,12 @@ export function SimpleUploadButton() {
     },
     onClientUploadComplete: () => {
       toast.dismiss("uploading");
-      toast("Upload complete!", {
-        icon: "✅",
-      })
+      toast( <span className="text-lg">✅ Upload Complete</span>)
       router.refresh();
     },
     onUploadError: (error) => {
       toast.dismiss("uploading");
-      toast(`Upload failed: ${error.message}`, {
-        icon: "❌",
-      })
+      toast(<span  className="text-lg">{`❌ Upload failed: ${error.message}`}</span>)
     }
   });
   const router = useRouter();
