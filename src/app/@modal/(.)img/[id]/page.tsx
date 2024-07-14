@@ -1,5 +1,5 @@
 import { Modal } from "~/app/@modal/(.)img/[id]/modal";
-import FullPageImageView from "~/components/full-image-page";
+import FullPageImageView from "~/common/full-image-page";
 
 /**
  * Asynchronously renders the photo modal based on the provided photo ID.
@@ -22,7 +22,7 @@ export default function PhotoModal({
   // Render the modal with the image
   return (
     <Modal>
-      <FullPageImageView id={idIsNum} />
+      <FullPageImageView photoId={idIsNum} />
     </Modal>
   );
 }

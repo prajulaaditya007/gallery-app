@@ -63,21 +63,20 @@ export function SimpleUploadButton() {
       posthog?.capture("uploading");
       toast(<div className="flex gap-2 items-center">
         <UploadSpinnerSVG />
-        <span className="text-lg">Uploading...</span>
+        <span className="text-lg">Uploading 📤</span>
       </div>, {
-        icon: "📤",
         duration: 100000,
         id: "uploading",
       });
     },
     onClientUploadComplete: () => {
       toast.dismiss("uploading");
-      toast( <span className="text-lg">✅ Upload Complete</span>)
+      toast( <span className="text-lg">Upload Complete ✅</span>)
       router.refresh();
     },
     onUploadError: (error) => {
       toast.dismiss("uploading");
-      toast(<span  className="text-lg">{`❌ Upload failed: ${error.message}`}</span>)
+      toast(<span  className="text-lg">{`Upload failed: ${error.message} ❌`}</span>)
     }
   });
 
